@@ -14,7 +14,7 @@ namespace ET
         public static void Build(PlatformType type, BuildAssetBundleOptions buildAssetBundleOptions, BuildOptions buildOptions, bool isBuildExe, bool isContainAB, bool clearFolder)
         {
             BuildTarget buildTarget = BuildTarget.StandaloneWindows;
-            string programName = "ET";
+            string programName = "Game";
             string exeName = programName;
             switch (type)
             {

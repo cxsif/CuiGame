@@ -177,6 +177,40 @@ namespace ET
      		}
      	}
 
+		public UnityEngine.UI.Button E_SettingButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_SettingButton == null )
+     			{
+		    		this.m_E_SettingButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"Group_Bottom/E_Setting");
+     			}
+     			return this.m_E_SettingButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_SettingImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_SettingImage == null )
+     			{
+		    		this.m_E_SettingImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"Group_Bottom/E_Setting");
+     			}
+     			return this.m_E_SettingImage;
+     		}
+     	}
+
 		public UnityEngine.UI.Text E_RoleLevelText
      	{
      		get
@@ -308,6 +342,8 @@ namespace ET
 			this.m_E_MakeImage = null;
 			this.m_E_TaskButton = null;
 			this.m_E_TaskImage = null;
+			this.m_E_SettingButton = null;
+			this.m_E_SettingImage = null;
 			this.m_E_RoleLevelText = null;
 			this.m_E_GoldText = null;
 			this.m_E_ExpText = null;
@@ -328,6 +364,8 @@ namespace ET
 		private UnityEngine.UI.Image m_E_MakeImage = null;
 		private UnityEngine.UI.Button m_E_TaskButton = null;
 		private UnityEngine.UI.Image m_E_TaskImage = null;
+		private UnityEngine.UI.Button m_E_SettingButton = null;
+		private UnityEngine.UI.Image m_E_SettingImage = null;
 		private UnityEngine.UI.Text m_E_RoleLevelText = null;
 		private UnityEngine.UI.Text m_E_GoldText = null;
 		private UnityEngine.UI.Text m_E_ExpText = null;

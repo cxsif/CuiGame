@@ -17,8 +17,9 @@ namespace ET
 			self.View.E_TaskButton.AddListener(self.OnTaskButtonClickHandler);
 			self.View.E_RankButton.AddListener(self.OnRankButtonClickHandler);
 			self.View.E_ChatButton.AddListener(self.OnChatButtonClickHandler);
-			
-			RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Role", self.View.E_RoleButton.gameObject, Vector3.one, new Vector3(75,55,0));
+            self.View.E_SettingButton.AddListener(self.OnSettingButtonClickHandler);
+
+            RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Role", self.View.E_RoleButton.gameObject, Vector3.one, new Vector3(75,55,0));
 			RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Forge", self.View.E_MakeButton.gameObject, Vector3.one, new Vector3(75,55,0));
 			RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Task", self.View.E_TaskButton.gameObject, Vector3.one, new Vector3(75,55,0));
 		}
@@ -96,5 +97,11 @@ namespace ET
 		{
 			self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Chat);
 		}
-	}
+
+		public static void OnSettingButtonClickHandler(this DlgMain self)
+		{
+            self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Setting);
+        }
+
+    }
 }

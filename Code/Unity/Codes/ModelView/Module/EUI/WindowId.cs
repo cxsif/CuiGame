@@ -20,5 +20,6 @@
         WindowID_Task,     //任务界面
         WindowID_Rank,     //排行榜界面
         WindowID_Chat,     //聊天界面
+        WindowID_Setting,  // 设置界面
     }
 }
