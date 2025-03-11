@@ -1,4 +1,4 @@
-﻿namespace ET
+namespace ET
 {
     public enum WindowID
     {
@@ -21,5 +21,6 @@
         WindowID_Rank,     //排行榜界面
         WindowID_Chat,     //聊天界面
         WindowID_Setting,  // 设置界面
-    }
+    	WindowID_Card,     // 卡牌界面
+	}
 }

@@ -211,6 +211,40 @@ namespace ET
      		}
      	}
 
+		public UnityEngine.UI.Button E_HeadButton
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_HeadButton == null )
+     			{
+		    		this.m_E_HeadButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"E_Head");
+     			}
+     			return this.m_E_HeadButton;
+     		}
+     	}
+
+		public UnityEngine.UI.Image E_HeadImage
+     	{
+     		get
+     		{
+     			if (this.uiTransform == null)
+     			{
+     				Log.Error("uiTransform is null.");
+     				return null;
+     			}
+     			if( this.m_E_HeadImage == null )
+     			{
+		    		this.m_E_HeadImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"E_Head");
+     			}
+     			return this.m_E_HeadImage;
+     		}
+     	}
+
 		public UnityEngine.UI.Text E_RoleLevelText
      	{
      		get
@@ -222,7 +256,7 @@ namespace ET
      			}
      			if( this.m_E_RoleLevelText == null )
      			{
-		    		this.m_E_RoleLevelText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"Group_Top/Group_Head/E_RoleLevel");
+		    		this.m_E_RoleLevelText = UIFindHelper.FindDeepChild<UnityEngine.UI.Text>(this.uiTransform.gameObject,"E_Head/E_RoleLevel");
      			}
      			return this.m_E_RoleLevelText;
      		}
@@ -344,6 +378,8 @@ namespace ET
 			this.m_E_TaskImage = null;
 			this.m_E_SettingButton = null;
 			this.m_E_SettingImage = null;
+			this.m_E_HeadButton = null;
+			this.m_E_HeadImage = null;
 			this.m_E_RoleLevelText = null;
 			this.m_E_GoldText = null;
 			this.m_E_ExpText = null;
@@ -366,6 +402,8 @@ namespace ET
 		private UnityEngine.UI.Image m_E_TaskImage = null;
 		private UnityEngine.UI.Button m_E_SettingButton = null;
 		private UnityEngine.UI.Image m_E_SettingImage = null;
+		private UnityEngine.UI.Button m_E_HeadButton = null;
+		private UnityEngine.UI.Image m_E_HeadImage = null;
 		private UnityEngine.UI.Text m_E_RoleLevelText = null;
 		private UnityEngine.UI.Text m_E_GoldText = null;
 		private UnityEngine.UI.Text m_E_ExpText = null;
