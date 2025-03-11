@@ -34,7 +34,8 @@ namespace ET
 				if (errorCode != ErrorCode.ERR_Success)
 				{
 					Log.Error(errorCode.ToString());
-					return;
+                    FlyMessageHelper.ShowErrorCode(self.DomainScene(), errorCode);
+                    return;
 				}
 
 
@@ -42,7 +43,8 @@ namespace ET
 				if (errorCode != ErrorCode.ERR_Success)
 				{
 					Log.Error(errorCode.ToString());
-					return;
+                    FlyMessageHelper.ShowErrorCode(self.DomainScene(), errorCode);
+                    return;
 				}
 
 				self.DomainScene().GetComponent<UIComponent>().HideWindow(WindowID.WindowID_Login);
@@ -50,7 +52,7 @@ namespace ET
 				
 				PlayerPrefs.SetString("Account",account);
 				PlayerPrefs.SetString("Password",password);
-			}
+            }
 			catch (Exception e)
 			{
 				Log.Error(e.ToString());

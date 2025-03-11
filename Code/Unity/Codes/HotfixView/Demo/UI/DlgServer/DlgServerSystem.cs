@@ -53,8 +53,8 @@ namespace ET
 
 			if (!isSelect)
 			{
-				Log.Error("请先选择区服");
-				return;
+                FlyMessageHelper.Show(self.DomainScene(), "请先选择区服");
+                return;
 			}
 
 			try

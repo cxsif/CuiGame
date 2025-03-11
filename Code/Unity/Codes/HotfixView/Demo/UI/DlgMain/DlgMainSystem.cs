@@ -100,7 +100,7 @@ namespace ET
 
 		public static void OnSettingButtonClickHandler(this DlgMain self)
 		{
-            self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Setting);
+			self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Setting);
         }
 
     }
