@@ -59,6 +59,7 @@ namespace ET
                     return;
                 }
                 self.Refresh();
+                FlyMessageHelper.Show(self.DomainScene(), "领奖成功");
             }
             catch (Exception e)
             {

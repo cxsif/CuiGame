@@ -9,7 +9,7 @@ namespace ET
             switch (errorCode)
             {
                 case ErrorCode.ERR_NetWorkError:
-                    return "网络错误";
+                    return "网络错误,请稍后再试";
                 case ErrorCode.ERR_AccountNameFormError:
                     return "登录账号格式错误";
                 case ErrorCode.ERR_PasswordFormError:

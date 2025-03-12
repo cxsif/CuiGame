@@ -48,6 +48,7 @@ namespace ET
             {
                 Log.Error(e.ToString());
             }
+            FlyMessageHelper.Show(self.DomainScene(), "领奖成功");
         }
     }
 }

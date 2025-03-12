@@ -92,7 +92,7 @@ namespace ET
      		}
      	}
 
-		public UnityEngine.UI.LoopVerticalScrollRect E_BagItemsLoopVerticalScrollRect
+		public UnityEngine.UI.LoopVerticalScrollRect E_CardItemsLoopVerticalScrollRect
      	{
      		get
      		{
@@ -101,79 +101,11 @@ namespace ET
      				Log.Error("uiTransform is null.");
      				return null;
      			}
-     			if( this.m_E_BagItemsLoopVerticalScrollRect == null )
+     			if( this.m_E_CardItemsLoopVerticalScrollRect == null )
      			{
-		    		this.m_E_BagItemsLoopVerticalScrollRect = UIFindHelper.FindDeepChild<UnityEngine.UI.LoopVerticalScrollRect>(this.uiTransform.gameObject,"BackGround/ContentBackGround/E_BagItems");
+		    		this.m_E_CardItemsLoopVerticalScrollRect = UIFindHelper.FindDeepChild<UnityEngine.UI.LoopVerticalScrollRect>(this.uiTransform.gameObject,"BackGround/ContentBackGround/E_CardItems");
      			}
-     			return this.m_E_BagItemsLoopVerticalScrollRect;
-     		}
-     	}
-
-		public UnityEngine.UI.Image E_QualityImage
-     	{
-     		get
-     		{
-     			if (this.uiTransform == null)
-     			{
-     				Log.Error("uiTransform is null.");
-     				return null;
-     			}
-     			if( this.m_E_QualityImage == null )
-     			{
-		    		this.m_E_QualityImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"BackGround/ContentBackGround/E_BagItems/Content/Item_cardItem/E_Quality");
-     			}
-     			return this.m_E_QualityImage;
-     		}
-     	}
-
-		public UnityEngine.UI.Image E_IconImage
-     	{
-     		get
-     		{
-     			if (this.uiTransform == null)
-     			{
-     				Log.Error("uiTransform is null.");
-     				return null;
-     			}
-     			if( this.m_E_IconImage == null )
-     			{
-		    		this.m_E_IconImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"BackGround/ContentBackGround/E_BagItems/Content/Item_cardItem/E_Icon");
-     			}
-     			return this.m_E_IconImage;
-     		}
-     	}
-
-		public UnityEngine.UI.Button E_SelectButton
-     	{
-     		get
-     		{
-     			if (this.uiTransform == null)
-     			{
-     				Log.Error("uiTransform is null.");
-     				return null;
-     			}
-     			if( this.m_E_SelectButton == null )
-     			{
-		    		this.m_E_SelectButton = UIFindHelper.FindDeepChild<UnityEngine.UI.Button>(this.uiTransform.gameObject,"BackGround/ContentBackGround/E_BagItems/Content/Item_cardItem/E_Select");
-     			}
-     			return this.m_E_SelectButton;
-     		}
-     	}
-
-		public UnityEngine.UI.Image E_SelectImage
-     	{
-     		get
-     		{
-     			if (this.uiTransform == null)
-     			{
-     				Log.Error("uiTransform is null.");
-     				return null;
-     			}
-     			if( this.m_E_SelectImage == null )
-     			{
-		    		this.m_E_SelectImage = UIFindHelper.FindDeepChild<UnityEngine.UI.Image>(this.uiTransform.gameObject,"BackGround/ContentBackGround/E_BagItems/Content/Item_cardItem/E_Select");
-     			}
-     			return this.m_E_SelectImage;
+     			return this.m_E_CardItemsLoopVerticalScrollRect;
      		}
      	}
 
@@ -320,11 +252,7 @@ namespace ET
 			this.m_E_MonkToggle = null;
 			this.m_E_AssistantToggle = null;
 			this.m_E_ShooterToggle = null;
-			this.m_E_BagItemsLoopVerticalScrollRect = null;
-			this.m_E_QualityImage = null;
-			this.m_E_IconImage = null;
-			this.m_E_SelectButton = null;
-			this.m_E_SelectImage = null;
+			this.m_E_CardItemsLoopVerticalScrollRect = null;
 			this.m_E_CloseButton = null;
 			this.m_E_CloseImage = null;
 			this.m_E_PreviousButton = null;
@@ -341,11 +269,7 @@ namespace ET
 		private UnityEngine.UI.Toggle m_E_MonkToggle = null;
 		private UnityEngine.UI.Toggle m_E_AssistantToggle = null;
 		private UnityEngine.UI.Toggle m_E_ShooterToggle = null;
-		private UnityEngine.UI.LoopVerticalScrollRect m_E_BagItemsLoopVerticalScrollRect = null;
-		private UnityEngine.UI.Image m_E_QualityImage = null;
-		private UnityEngine.UI.Image m_E_IconImage = null;
-		private UnityEngine.UI.Button m_E_SelectButton = null;
-		private UnityEngine.UI.Image m_E_SelectImage = null;
+		private UnityEngine.UI.LoopVerticalScrollRect m_E_CardItemsLoopVerticalScrollRect = null;
 		private UnityEngine.UI.Button m_E_CloseButton = null;
 		private UnityEngine.UI.Image m_E_CloseImage = null;
 		private UnityEngine.UI.Button m_E_PreviousButton = null;

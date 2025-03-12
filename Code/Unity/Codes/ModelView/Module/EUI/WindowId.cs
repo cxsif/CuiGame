@@ -22,5 +22,6 @@ namespace ET
         WindowID_Chat,     //聊天界面
         WindowID_Setting,  // 设置界面
     	WindowID_Card,     // 卡牌界面
+		WindowID_Reward,   // 获得奖励
 	}
 }
