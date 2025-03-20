@@ -347,7 +347,7 @@ namespace ET
                 self.LoadOneBundle(dependency);
             }
 
-            //Log.Debug($"-----------dep load finish {assetBundleName} dep: {dependencies.ToList().ListToString()}");
+            Log.Debug($"-----------dep load finish {assetBundleName} dep: {dependencies.ToList().ListToString()}");
         }
 
         private static void AddResource(this ResourcesComponent self, string bundleName, string assetName, UnityEngine.Object resource)

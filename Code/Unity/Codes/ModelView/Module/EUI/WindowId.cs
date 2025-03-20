@@ -23,5 +23,6 @@ namespace ET
         WindowID_Setting,  // 设置界面
     	WindowID_Card,     // 卡牌界面
 		WindowID_Reward,   // 获得奖励
+		WindowID_Hotfix,   // 更新界面
 	}
 }

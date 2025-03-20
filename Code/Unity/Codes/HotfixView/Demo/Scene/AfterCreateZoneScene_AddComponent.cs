@@ -12,8 +12,11 @@ namespace ET
             zoneScene.AddComponent<ResourcesLoaderComponent>();
             zoneScene.AddComponent<FlyDamageValueViewComponent>();
             zoneScene.AddComponent<FlyMessageViewComponent>();
-        
-            zoneScene.GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Login);
+
+            // zoneScene.GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Login);
+
+            // ¸üÐÂHotfix
+            zoneScene.GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Hotfix);
 
         }
     }
